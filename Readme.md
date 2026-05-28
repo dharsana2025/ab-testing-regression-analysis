@@ -1,144 +1,62 @@
-# A/B Testing & Regression Analysis for Landing Page Optimization
+# 🧪 A/B Testing & Regression Analysis for Landing Page Optimization
 
-## Project Overview
-
-This project evaluates whether a redesigned landing page significantly improves customer conversion performance compared to an existing version using **A/B testing**, **statistical hypothesis testing**, and **logistic regression**.
-
-The analysis combines business experimentation with statistical validation to determine whether observed improvements are statistically meaningful and commercially valuable.
+> Evaluating the impact of a redesigned landing page on conversion behavior using statistical hypothesis testing and logistic regression.
 
 ---
 
-## Business Problem
+## 📌 Overview
 
-A business introduced a redesigned landing page to improve customer conversion rates.
-
-An A/B experiment was conducted:
-
-- **Control Group** → Existing landing page  
-- **Treatment Group** → Redesigned landing page
-
-The objective was to determine whether the redesigned experience significantly improves conversion performance.
+A business introduced a redesigned landing page to improve customer conversion rates. This project conducts a full A/B experiment — from randomization validation to statistical testing and multivariate regression — to determine whether the redesign drives a meaningful, statistically significant uplift in conversions.
 
 ---
 
-## Project Objective
+## 📊 Key Results
 
-The primary goal was to answer:
-
-> **Does the redesigned landing page significantly improve conversion rate?**
-
-Key evaluation areas:
-
-- Conversion rate performance
-- Statistical significance
-- Practical business impact
-- User behavior patterns
-- Conversion drivers using logistic regression
+| Metric | Value |
+|---|---|
+| Conversion Uplift | +6.08 percentage points |
+| Relative Uplift | 51.18% over control |
+| Statistical Significance | α = 0.05 ✅ |
+| Primary KPI | Conversion Rate |
+| Secondary KPIs | Session Duration, Pages Visited, Purchase Amount |
 
 ---
 
-## Dataset Overview
+## 🔬 Methodology
 
-The dataset contains simulated user-level experimentation data including:
-
-- User ID
-- Experiment Group (Control/Treatment)
-- Landing Page
-- Conversion Status
-- Age
-- Gender
-- Session Duration
-- Pages Visited
-- Device Type
-- Geographic Location
-- Purchase Amount
+1. **Experiment Validation** — randomization check across device type, location, and age distribution
+2. **EDA** — conversion rate, session duration, pages visited, purchase amount by group
+3. **A/B Testing** — Z-test for proportions with confidence interval analysis
+4. **Relative Uplift Analysis** — treatment vs control performance gap
+5. **Logistic Regression** — multivariate model controlling for demographic and behavioral factors
+6. **Device-Level Analysis** — conversion breakdown across device types
 
 ---
 
-## Methodology
+## 📈 Business Insight
 
-The project followed a structured experimentation workflow:
-
-1. **Experiment Validation**
-   - Randomization checks
-   - Group balance verification
-
-2. **Exploratory Data Analysis (EDA)**
-   - Conversion rate comparison
-   - Relative uplift analysis
-   - Device and behavioral segmentation
-
-3. **Statistical A/B Testing**
-   - Hypothesis testing
-   - Two-Proportion Z-Test
-   - Confidence interval estimation
-   - Practical significance evaluation
-
-4. **Regression Analysis**
-   - Logistic regression
-   - Feature significance testing
-   - Odds ratio interpretation
+> The treatment landing page **significantly outperformed** the control group.
+> Logistic regression confirmed the redesigned page remained the **strongest predictor of conversion** even after controlling for age, location, and device type.
 
 ---
 
-## Key Findings
+## 🛠️ Tech Stack
 
-### Conversion Performance
-- Conversion rate improved from **11.87% → 17.95%**
-- Treatment generated a **51.18% relative uplift**
-
-### Statistical Results
-- **Z-statistic:** 46.28  
-- **P-value:** < 0.001  
-- Improvement was **statistically significant**
-
-### Confidence Interval
-- Estimated uplift range: **5.82% – 6.33%**
-
-### Logistic Regression Insights
-- Treatment remained the **strongest predictor of conversion**
-- Users exposed to the treatment page were **1.62× more likely to convert**
-- Mobile users showed slightly lower conversion tendency
-- Most demographic and geographic variables showed minimal influence
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Statsmodels](https://img.shields.io/badge/Statsmodels-4051B5?style=flat)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 
 ---
 
-## Business Recommendations
+## 📁 Project Structure
 
-- Roll out the redesigned landing page to a broader audience
-- Optimize the **mobile user experience**
-- Continue A/B testing for CTA placement, layout, and personalization
-- Monitor post-rollout conversion performance
-
----
-
-## Tech Stack
-
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **SciPy**
-- **Statsmodels**
-- **Scikit-learn**
-- **Jupyter Notebook**
-
----
-
-## Project Files
-
-- **Notebook:** Full A/B testing and regression workflow with statistical validation and business insights.
-
----
-
-## Key Takeaways
-
-This project demonstrates practical application of:
-
-- A/B Testing
-- Hypothesis Testing
-- Statistical Significance
-- Confidence Intervals
-- Logistic Regression
-- Odds Ratio Interpretation
-- Business Impact Analysis
+```
+ab-testing-regression-analysis/
+│
+├── A_B_Testing_Regression_Analysis.ipynb   # Main analysis notebook
+├── AB Testing Data.csv                      # Dataset
+└── README.md
+```
