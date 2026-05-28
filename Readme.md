@@ -49,14 +49,3 @@ A business introduced a redesigned landing page to improve customer conversion r
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 
----
-
-## 📁 Project Structure
-
-```
-ab-testing-regression-analysis/
-│
-├── A_B_Testing_Regression_Analysis.ipynb   # Main analysis notebook
-├── AB Testing Data.csv                      # Dataset
-└── README.md
-```
